@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="pageWrapper">
+
+
+    <section class="section-container">
+     <div id="first-view" class="section" data-hash="section-1">
+       <span id="inspiration-text">INSPIRATION COMES FROM</span> <span id="vertical-text">INSIDE</span>
+       <p>&or; SCROLL DOWN &or;</p>
+     </div>
+
+     <div id="second-view" class="section" data-hash="section-2">
+       <div class="textDiv">
+         <p>
+         I'm Luca, a young coding enthusiast who loves New York and sushi.
+         <br>
+         I'm an eager self-learner and a creative mind that is always in search of something new.
+         </p>
+       </div>
+       <div class="quoteDiv">
+         <p>
+           &ldquo;The people who are crazy enough to think they can change the world are the ones who do&rdquo;
+           <br>
+           - Steve Jobs
+         </p>
+       </div>
+      </div>
+
+     <div id="third-view" class="section" data-hash="section-3">
+       <div class="textDiv">
+         <p>
+         I'm passionate for games and websites development.
+         <br>
+         My games are made with Unity and you can find them on Google Play.
+         </p>
+       </div>
+       <div class="quoteDiv">
+         <p>
+           &ldquo;Someone is sitting in the shade today because someone planted a tree a long time ago&rdquo;
+           <br>
+           - Warren Buffett
+         </p>
+       </div>
+      </section>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.alton.min.js"></script>
+    <script>
+
+    (function($) {
+      $(document).ready(function() {
+          $(document).alton({
+              fullSlideContainer: 'section-container',
+              singleSlideClass: 'section',
+              useSlideNumbers: true,
+              slideNumbersBorderColor: '#fff',
+              slideNumbersColor: 'transparent',
+              bodyContainer: 'pageWrapper',
+          });
+      });
+    })(jQuery);
+  
+    </script>
+  </body>
+</html>
