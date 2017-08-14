@@ -5,13 +5,14 @@
 
 body {
 	font-family: Railway, Verdana;
-    background-color: #cccccc;
+    background-color: white;
     margin: 0;
 }
 
 .section {
 	width: 100%;
-	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .textDiv {
@@ -46,27 +47,32 @@ body {
 	font-size: 5vw;
 	color: whitesmoke;
 	text-shadow: 0 0 1vw #000000;
-	text-align: center;
 }
 
 #first-view p {
+	position: absolute;
+	top: 92vh;
+	left: 45vw;
+
 	font-size: 1vw;
 	text-shadow: 0 0 0.4vw #000000;
-	padding-top: 80vh;
+
+	animation: floating 0.75s ease infinite alternate;
 }
 
 #inspiration-text {
 	position: relative;
 	top: 25vh;
+	padding-left: 5vw;
 }
 
 #vertical-text {
 	letter-spacing: 55px;
 
-	display: inline-block;
+	display: block;
 	position: relative;
-	top: 85vh;
-	left: 16vw;
+	top: 65vh;
+	left: 81vw;
 
 	transform: rotate(-90deg);
 	transform-origin: left top 0;
@@ -80,4 +86,10 @@ body {
 
 #third-view {
 	background-image: url("../img/02.jpg");
+}
+
+/* ANIMATIONS */
+@keyframes floating {
+    from {top: 92vh;}
+    to {top: 91vh;}
 }
