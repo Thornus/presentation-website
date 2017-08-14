@@ -5,17 +5,17 @@
 
 body {
 	font-family: Railway, Verdana;
-    background-color: white;
+    background-color: black;
     margin: 0;
 }
 
-.section {
+.section, #background-image-container {
 	width: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.textDiv {
+.text-div {
 	display: block;
 	float: left;
 	width: 30vw;
@@ -29,7 +29,7 @@ body {
 	text-align: justify;
 }
 
-.quoteDiv {
+.quote-div {
 	display: block;
 	width: 40vw;
 	height: 5vw;
@@ -42,14 +42,19 @@ body {
 	text-align: justify;
 }
 
-#first-view {
+#background-image-container {
 	background-image: url("../img/00.jpg");
+	position: absolute;
+	height: 100%;
+}
+
+#first-view {
 	font-size: 5vw;
 	color: whitesmoke;
 	text-shadow: 0 0 1vw #000000;
 }
 
-#first-view p {
+#scrollDownText {
 	position: absolute;
 	top: 92vh;
 	left: 45vw;
@@ -60,10 +65,20 @@ body {
 	animation: floating 0.75s ease infinite alternate;
 }
 
-#inspiration-text {
+#inspiration-text-div {
 	position: relative;
 	top: 25vh;
 	padding-left: 5vw;
+}
+
+#inspiration-text-div span {
+	opacity: 0;
+}
+
+.inspiration-words {
+	display: inline-block;
+	animation: enlarge 0.3s ease-in-out;
+	-webkit-animation-fill-mode: forwards;
 }
 
 #vertical-text {
@@ -71,13 +86,18 @@ body {
 
 	display: block;
 	position: relative;
-	top: 65vh;
+	top: 90vh;
 	left: 81vw;
+
+	opacity: 0;
 
 	transform: rotate(-90deg);
 	transform-origin: left top 0;
 	-webkit-transform: rotate(-90deg);
 	-webkit-transform-origin: left top 0;
+
+	animation: slideUp 0.5s 1.05s ease-out;
+	-webkit-animation-fill-mode: forwards;
 }
 
 #second-view {
@@ -92,4 +112,32 @@ body {
 @keyframes floating {
     from {top: 92vh;}
     to {top: 91vh;}
+}
+
+@keyframes enlarge {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+	}
+
+	80% {
+		transform: scale(1.2);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		top: 90vh;
+		opacity: 0;
+	}
+	to {
+		top: 65vh;
+		opacity: 1;
+	}
 }
