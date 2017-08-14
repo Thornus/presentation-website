@@ -54,7 +54,7 @@ body {
 	top: 92vh;
 	left: 45vw;
 
-	font-size: 1vw;
+	font-size: 2vh;
 	text-shadow: 0 0 0.4vw #000000;
 
 	animation: floating 0.75s ease infinite alternate;
