@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="pageWrapper">
+  <body class="page-wrapper">
 
 
     <section class="section-container">
@@ -17,7 +17,7 @@
         <span>INSPIRATION</span> <span>COMES</span> <span>FROM</span>
        </div> 
        <span id="vertical-text">INSIDE</span>
-       <p id="scrollDownText">&or; SCROLL DOWN &or;</p>
+       <p id="scroll-down-text">&or; SCROLL DOWN &or;</p>
      </div>
 
      <div id="second-view" class="section" data-hash="section-2">
@@ -57,26 +57,45 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.alton.min.js"></script>
     <script>
-          $(document).alton({
-            fullSlideContainer: 'section-container',
-            singleSlideClass: 'section',
-            useSlideNumbers: true,
-            slideNumbersBorderColor: '#fff',
-            slideNumbersColor: 'transparent',
-            bodyContainer: 'pageWrapper'
-          });
+      disableScroll();
 
-          $(document).ready(function() {
-            var i = 0;
+      setTimeout(function() {
+        $("#scroll-down-text").css("display", "initial");
+        enableScroll();
 
-            $("#inspiration-text-div span:eq("+i+")").toggleClass("inspiration-words");
+        $(document).alton({
+          fullSlideContainer: 'section-container',
+          singleSlideClass: 'section',
+          useSlideNumbers: true,
+          slideNumbersBorderColor: '#fff',
+          slideNumbersColor: 'transparent',
+          bodyContainer: 'page-wrapper'
+        }) }, 1500);
 
-            setInterval(function() {
-              i++;
-              $("#inspiration-text-div span:eq("+i+")").toggleClass("inspiration-words");
-              if(i==2) clearInterval();
-            }, 350);
-          });
+      $(document).ready(function() {
+        var i = 0;
+
+        $("#inspiration-text-div span").eq(i).toggleClass("inspiration-words");
+
+        setInterval(function() {
+          i++;
+          $("#inspiration-text-div span").eq(i).toggleClass("inspiration-words");
+          if(i==2) clearInterval();
+        }, 350);
+      });
+
+      function enableScroll() {
+        $(window).off("mousewheel DOMMouseScroll", function() {
+            return false;
+        });
+      }
+
+      function disableScroll() {
+        $(window).on("mousewheel DOMMouseScroll", function() {
+            return false;
+        });
+      }
+
     </script>
   </body>
 </html>
