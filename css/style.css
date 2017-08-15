@@ -6,6 +6,7 @@
 body {
 	font-family: Railway, Verdana;
     background-color: black;
+    color: whitesmoke;
     margin: 0;
 }
 
@@ -25,7 +26,6 @@ body {
 	padding-left: 5vw;
 
 	font-size: 1.5vw;
-	color: blanchedalmond;
 	text-shadow: 0 0 0.5vw #000000;
 	text-align: justify;
 }
@@ -38,9 +38,13 @@ body {
 	padding-left: 50vw;
 
 	font-size: 1.75vw;
-	color: blanchedalmond;
 	text-shadow: 0 0 0.5vw #000000;
 	text-align: justify;
+}
+
+.text-div p, .quote-div p {
+	background-color: rgba(205, 205, 205, 0.5);
+	padding: 10;
 }
 
 #background-image-container {
@@ -49,14 +53,12 @@ body {
 	height: 100%;
 	opacity: 0;
 
-	animation: fadeIn 0.85s 1.35s ease;
-	-webkit-animation: fadeIn 0.85s 1.35s ease;
-	-webkit-animation-fill-mode: forwards;
+	animation: fadeIn 0.85s 1.35s ease forwards;
+	-webkit-animation: fadeIn 0.85s 1.35s ease forwards;
 }
 
 #first-view {
 	font-size: 5vw;
-	color: whitesmoke;
 	text-shadow: 0 0 1vw #000000;
 }
 
@@ -86,9 +88,8 @@ body {
 
 .inspiration-words {
 	display: inline-block;
-	animation: enlarge 0.6s ease-in-out;
-	-webkit-animation: enlarge 0.6s ease-in-out;
-	-webkit-animation-fill-mode: forwards;
+	animation: enlarge 0.6s ease-in-out forwards;
+	-webkit-animation: enlarge 0.6s ease-in-out forwards;
 }
 
 #vertical-text {
@@ -106,9 +107,8 @@ body {
 	-webkit-transform: rotate(-90deg);
 	-webkit-transform-origin: left top 0;
 
-	animation: slideUp 0.75s 1.35s ease-out;
-	-webkit-animation: slideUp 0.75s 1.35s ease-out;
-	-webkit-animation-fill-mode: forwards;
+	animation: slideUp 0.75s 1.35s ease-out forwards;
+	-webkit-animation: slideUp 0.75s 1.35s ease-out forwards;
 }
 
 #second-view {
