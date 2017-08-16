@@ -17,29 +17,31 @@ body {
 	background-position: center;
 }
 
-.text-div {
+.text-div, .quote-div {
 	display: block;
-	float: left;
-	width: 30vw;
+		
 	height: 5vw;
+
+	text-shadow: 0 0 0.5vw #000000;
+}
+
+.text-div {
 	padding-top: 70vh;
 	padding-left: 5vw;
+	width: 50vw;
 
-	font-size: 1.5vw;
-	text-shadow: 0 0 0.5vw #000000;
-	text-align: justify;
+	font-size: 2.5vh;
 }
 
 .quote-div {
-	display: block;
-	width: 40vw;
-	height: 5vw;
-	padding-top: 5vh;
-	padding-left: 50vw;
+	position: relative;
+    bottom: 77vh;
 
-	font-size: 1.75vw;
-	text-shadow: 0 0 0.5vw #000000;
-	text-align: justify;
+	padding-top: 5vh;
+	padding-left: 33vw;
+	width: 60vw;
+
+	font-size: 3vh;
 }
 
 .text-div p, .quote-div p {
@@ -48,7 +50,8 @@ body {
 }
 
 #background-image-container {
-	background-image: url("../img/00.jpg");
+	background-image: url("../img/00_m.jpg");
+
 	position: absolute;
 	height: 100%;
 	opacity: 0;
@@ -58,7 +61,6 @@ body {
 }
 
 #first-view {
-	font-size: 5vw;
 	text-shadow: 0 0 1vw #000000;
 }
 
@@ -67,7 +69,7 @@ body {
 
 	position: absolute;
 	top: 92vh;
-	left: 45vw;
+	left: 37vw;
 
 	font-size: 2vh;
 	text-shadow: 0 0 0.4vw #000000;
@@ -77,9 +79,10 @@ body {
 }
 
 #inspiration-text-div {
+	font-size: 6vw;
 	position: relative;
-	top: 25vh;
-	padding-left: 5vw;
+	top: 5vw;
+	text-align: center;
 }
 
 #inspiration-text-div span {
@@ -93,12 +96,13 @@ body {
 }
 
 #vertical-text {
-	letter-spacing: 55px;
+	font-size: 10vw;
+	letter-spacing: 40px;
 
 	display: block;
 	position: relative;
-	top: 90vh;
-	left: 81vw;
+	top: 85vh;
+	left: 45vw;
 
 	opacity: 0;
 
@@ -112,11 +116,57 @@ body {
 }
 
 #second-view {
-	background-image: url("../img/01.jpg");
+	background-image: url("../img/01_m.jpg");
 }
 
 #third-view {
-	background-image: url("../img/02.jpg");
+	background-image: url("../img/02_m.jpg");
+}
+
+@media only screen and (min-width: 1024px) { /* DESKTOP */
+	.text-div, .quote-div {
+		font-size: 1.75vw;
+		width: 35vw;
+	}
+
+	.quote-div {
+		padding-left: 60vw;
+		bottom: 83vh;
+	}
+
+	#background-image-container {
+		background-image: url("../img/00.jpg");
+	}
+
+	#scroll-down-text {
+		left: 45vw;
+	}
+
+	#inspiration-text-div, #vertical-text {
+		font-size: 5vw;
+	}
+
+	#inspiration-text-div {
+		top: 25vh;
+		padding-left: 5vw;
+		text-align: initial;
+		font-size: 5vw;
+	}
+
+	#vertical-text {
+		letter-spacing: 55px;
+
+		top: 90vh;
+		left: 81vw;
+	}
+
+	#second-view {
+		background-image: url("../img/01.jpg");
+	}
+
+	#third-view {
+		background-image: url("../img/02.jpg");
+	}
 }
 
 /* ANIMATIONS */
