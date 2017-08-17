@@ -69,7 +69,7 @@ body {
 	display: none;
 
 	position: relative;
-	top: 80vh;
+	top: 75vh;
 	left: 37vw;
 
 	font-size: 2vh;
@@ -124,60 +124,10 @@ body {
 	background-image: url("../img/02_m.jpg");
 }
 
-@media only screen and (min-width: 800px) { /* DESKTOP AND TABLET*/
-	.text-div, .quote-div {
-		font-size: 1.75vw;
-		width: 35vw;
-	}
-
-	.text-div {
-		top: 70%;
-	}
-
-	.quote-div {
-		bottom: 10%;
-	    left: 60%;
-	}
-
-	#background-image-container {
-		background-image: url("../img/00.jpg");
-	}
-
-	#scroll-down-text {
-		left: 45vw;
-	}
-
-	#inspiration-text-div, #vertical-text {
-		font-size: 5vw;
-	}
-
-	#inspiration-text-div {
-		top: 25vh;
-		padding-left: 5vw;
-		text-align: initial;
-		font-size: 5vw;
-	}
-
-	#vertical-text {
-		letter-spacing: 55px;
-
-		top: 90vh;
-		left: 81vw;
-	}
-
-	#second-view {
-		background-image: url("../img/01.jpg");
-	}
-
-	#third-view {
-		background-image: url("../img/02.jpg");
-	}
-}
-
 /* ANIMATIONS */
 @keyframes floating {
-    from {top: 82vh;}
-    to {top: 81vh;}
+    from {top: 76vh;}
+    to {top: 75vh;}
 }
 
 @keyframes enlarge {
@@ -217,4 +167,62 @@ body {
 @keyframes fadeIn {
 	from { opacity: 0; }
 	to { opacity: 1; }
+}
+/**/
+
+/* DESKTOP AND TABLET (LANDSCAPE)*/
+@media only screen and (min-width: 800px) {
+	.text-div, .quote-div {
+		font-size: 1.75vw;
+		width: 35vw;
+	}
+
+	.text-div {
+		top: 70%;
+	}
+
+	.quote-div {
+		bottom: 10%;
+	    left: 60%;
+	}
+
+	#background-image-container {
+		background-image: url("../img/00.jpg");
+	}
+
+	#scroll-down-text {
+		top: 69vh;
+		left: 45vw;
+	}
+
+	#inspiration-text-div, #vertical-text {
+		font-size: 5vw;
+	}
+
+	#inspiration-text-div {
+		top: 25vh;
+		padding-left: 5vw;
+		text-align: initial;
+		font-size: 5vw;
+	}
+
+	#vertical-text {
+		letter-spacing: 55px;
+
+		top: 90vh;
+		left: 81vw;
+	}
+
+	#second-view {
+		background-image: url("../img/01.jpg");
+	}
+
+	#third-view {
+		background-image: url("../img/02.jpg");
+	}
+
+	@keyframes floating {
+    from {top: 70vh;}
+    to {top: 69vh;}
+}
 }
