@@ -36,8 +36,8 @@ body {
 .quote-div {
 	position: relative;
 
-    bottom: 104vw;
-	left: 32vw;
+    bottom: 70%;
+	left: 35%;
 
 	width: 60vw;
 
@@ -130,8 +130,8 @@ body {
 	}
 
 	.quote-div {
-		bottom: 80vh;
-	    left: 59vw;
+		bottom: 80%;
+	    left: 60%;
 	}
 
 	#background-image-container {
