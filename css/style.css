@@ -4,7 +4,7 @@
 }
 
 body {
-	font-family: Railway, Verdana;
+    font-family: Railway, Verdana;
     background-color: black;
     color: whitesmoke;
     margin: 0;
@@ -26,8 +26,10 @@ body {
 }
 
 .text-div {
-	padding-top: 70vh;
-	padding-left: 5vw;
+    position: relative;
+    top: 70vh;
+    left: 5vw;
+
 	width: 60vw;
 
 	font-size: 2.5vh;
@@ -35,10 +37,8 @@ body {
 
 .quote-div {
 	position: relative;
-    bottom: 77vh;
+    top: 7vh;
 
-	padding-top: 5vh;
-	padding-left: 33vw;
 	width: 60vw;
 
 	font-size: 3vh;
@@ -123,7 +123,7 @@ body {
 	background-image: url("../img/02_m.jpg");
 }
 
-@media only screen and (min-width: 800px) { /* DESKTOP AND TABLET*/
+@media only screen and (min-width: 768px) { /* DESKTOP AND TABLET*/
 	.text-div, .quote-div {
 		font-size: 1.75vw;
 		width: 35vw;
