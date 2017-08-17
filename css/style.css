@@ -70,7 +70,7 @@ body {
 
 	position: relative;
 	top: 75vh;
-	left: 37vw;
+	left: 36%;
 
 	font-size: 2vh;
 	text-shadow: 0 0 0.4vw #000000;
@@ -222,7 +222,7 @@ body {
 	}
 
 	@keyframes floating {
-    from {top: 70vh;}
-    to {top: 69vh;}
-}
+	    from {top: 70vh;}
+	    to {top: 69vh;}
+	}
 }
