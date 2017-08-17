@@ -68,8 +68,8 @@ body {
 #scroll-down-text {
 	display: none;
 
-	position: absolute;
-	top: 92vh;
+	position: relative;
+	top: 80vh;
 	left: 37vw;
 
 	font-size: 2vh;
@@ -176,8 +176,8 @@ body {
 
 /* ANIMATIONS */
 @keyframes floating {
-    from {top: 92vh;}
-    to {top: 91vh;}
+    from {top: 82vh;}
+    to {top: 81vh;}
 }
 
 @keyframes enlarge {
