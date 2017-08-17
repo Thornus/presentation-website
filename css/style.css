@@ -26,8 +26,10 @@ body {
 }
 
 .text-div {
-	padding-top: 70vh;
-	padding-left: 5vw;
+    position: relative;
+    padding-left: 5vw;
+    top: 70%;
+
 	width: 60vw;
 
 	font-size: 2.5vh;
@@ -36,7 +38,6 @@ body {
 .quote-div {
 	position: relative;
 
-    bottom: 70%;
 	left: 35%;
 
 	width: 60vw;
@@ -130,7 +131,6 @@ body {
 	}
 
 	.quote-div {
-		bottom: 80%;
 	    left: 60%;
 	}
 
