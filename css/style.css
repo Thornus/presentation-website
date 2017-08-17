@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Railway, Verdana;
+	font-family: Railway, Verdana;
     background-color: black;
     color: whitesmoke;
     margin: 0;
@@ -123,7 +123,7 @@ body {
 	background-image: url("../img/02_m.jpg");
 }
 
-@media only screen and (min-width: 768px) { /* DESKTOP AND TABLET*/
+@media only screen and (min-width: 800px) { /* DESKTOP AND TABLET*/
 	.text-div, .quote-div {
 		font-size: 1.75vw;
 		width: 35vw;
